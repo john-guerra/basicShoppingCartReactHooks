@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 import Product from "./Product.js";
 
-const ShoppingPage = ({ products, addProduct }) => {
+const ProductList = ({ products, addProduct }) => {
   return (
-    <div className="ShoppingPage">
+    <div className="ProductList">
       <h2>Products</h2>
       <div>
         {products.map((p, i) => (
@@ -20,7 +20,7 @@ const ShoppingPage = ({ products, addProduct }) => {
   );
 };
 
-ShoppingPage.propTypes = {
+ProductList.propTypes = {
   products: PropTypes.array.isRequired,
   addProduct: PropTypes.func.isRequired,
 };
